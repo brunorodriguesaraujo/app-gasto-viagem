@@ -1,4 +1,4 @@
-package br.com.usemobile.gastoviajem
+package br.com.usemobile.gastoviagem
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

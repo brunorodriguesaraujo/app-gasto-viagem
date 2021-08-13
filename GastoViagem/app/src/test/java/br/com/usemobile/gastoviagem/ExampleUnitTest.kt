@@ -1,4 +1,4 @@
-package br.com.usemobile.gastoviajem
+package br.com.usemobile.gastoviagem
 
 import org.junit.Test
 

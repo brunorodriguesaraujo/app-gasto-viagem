@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Gasto Viajem</string>
+    <string name="app_name">Gasto Viagem</string>
     <string name="distancia">Distância</string>
     <string name="total_de_quilometros">Total de quilômetros</string>
     <string name="preco_litro">Preço por litro</string>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp"
+    android:layout_margin="16dp"
     tools:context=".MainActivity">
 
     <EditText
@@ -98,6 +98,6 @@
         android:background="@color/lightGreen"
         android:padding="22dp"
         android:layout_marginTop="16dp"
-        />
+        android:textColor="@color/white"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
