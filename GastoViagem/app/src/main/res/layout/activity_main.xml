@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/distancia"/>
+
+    <TextView
+        android:id="@+id/textTotalKM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/editTextDistance"
+        app:layout_constraintEnd_toEndOf="@id/editTextDistance"
+        app:layout_constraintTop_toBottomOf="@id/editTextDistance"
+        android:text="@string/total_de_quilometros"/>
+
+    <EditText
+        android:id="@+id/editTextPreco"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/editTextDistance"
+        app:layout_constraintTop_toBottomOf="@id/textTotalKM"
+        app:layout_constraintEnd_toEndOf="@id/editTextDistance"
+        android:hint="@string/preco"/>
+
+    <TextView
+        android:id="@+id/textCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/textTotalKM"
+        app:layout_constraintEnd_toEndOf="@id/textTotalKM"
+        app:layout_constraintTop_toBottomOf="@id/editTextPreco"
+        android:text="@string/preco_litro"/>
+
+    <EditText
+        android:id="@+id/editTextAutonomy"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/editTextPreco"
+        app:layout_constraintTop_toBottomOf="@id/textCost"
+        app:layout_constraintEnd_toEndOf="@id/editTextPreco"
+        android:hint="@string/autonomia"/>
+
+    <TextView
+        android:id="@+id/textKmLiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/textCost"
+        app:layout_constraintEnd_toEndOf="@id/textCost"
+        app:layout_constraintTop_toBottomOf="@id/editTextAutonomy"
+        android:text="@string/kms_por_litro"/>
+
+    <TextView
+        android:id="@+id/textExpense"
+        android:layout_marginTop="64dp"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textKmLiter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="true"
+        android:text="@string/gasto_total"/>
+
+    <TextView
+        android:id="@+id/textValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/textExpense"
+        app:layout_constraintEnd_toEndOf="@id/textExpense"
+        app:layout_constraintTop_toBottomOf="@id/textExpense"
+        android:text="R$ 0"
+        android:textSize="32sp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/calcular"
+        android:background="@color/lightGreen"
+        android:padding="22dp"
+        android:layout_marginTop="16dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
