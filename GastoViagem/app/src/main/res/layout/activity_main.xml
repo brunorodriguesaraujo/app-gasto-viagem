@@ -15,7 +15,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:hint="@string/distancia"/>
+        android:hint="@string/distancia"
+        android:inputType="number"/>
 
     <TextView
         android:id="@+id/textTotalKM"
@@ -27,14 +28,15 @@
         android:text="@string/total_de_quilometros"/>
 
     <EditText
-        android:id="@+id/editTextPreco"
+        android:id="@+id/editTextCost"
         android:layout_marginTop="32dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@id/editTextDistance"
         app:layout_constraintTop_toBottomOf="@id/textTotalKM"
         app:layout_constraintEnd_toEndOf="@id/editTextDistance"
-        android:hint="@string/preco"/>
+        android:hint="@string/preco"
+        android:inputType="numberDecimal"/>
 
     <TextView
         android:id="@+id/textCost"
@@ -42,7 +44,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@id/textTotalKM"
         app:layout_constraintEnd_toEndOf="@id/textTotalKM"
-        app:layout_constraintTop_toBottomOf="@id/editTextPreco"
+        app:layout_constraintTop_toBottomOf="@id/editTextCost"
         android:text="@string/preco_litro"/>
 
     <EditText
@@ -50,10 +52,11 @@
         android:layout_marginTop="32dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/editTextPreco"
+        app:layout_constraintStart_toStartOf="@id/editTextCost"
         app:layout_constraintTop_toBottomOf="@id/textCost"
-        app:layout_constraintEnd_toEndOf="@id/editTextPreco"
-        android:hint="@string/autonomia"/>
+        app:layout_constraintEnd_toEndOf="@id/editTextCost"
+        android:hint="@string/autonomia"
+        android:inputType="number"/>
 
     <TextView
         android:id="@+id/textKmLiter"
